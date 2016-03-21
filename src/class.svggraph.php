@@ -165,9 +165,8 @@ class CSVGGraph
         // Draw main text
 
         $style=sprintf( "style=\"fill: %s; font-size: %dpx;\"", $col, $this->font_size );
-
         $this->xml .= sprintf( "<text %s x=\"%d\" y=\"%d\">%s</text>\n",
-            $style, $txt_pos, $top+($this->e_height-5), htmlentities( $main ) );
+            $style, $txt_pos, $top+($this->e_height-5), $main);
         
         // Draw subscript text
 
@@ -176,7 +175,7 @@ class CSVGGraph
             $style=sprintf( "style=\"fill: %s; font-size: %dpx;\"", $col, $this->font_size+2 );
 
             $this->xml .= sprintf( "<text %s x=\"%d\" y=\"%d\">%s</text>\n",
-                $style, $txt_pos+$main_width+1, $top+($this->e_height-2), htmlentities( $sub ));
+                $style, $txt_pos+$main_width+1, $top+($this->e_height-2), $sub);
         }
     }
 
@@ -356,9 +355,9 @@ class CSVGGraph
     {
         // TODO: Templates anyone?! ....
 
-        $this->xml .= sprintf( "<?xml version=\"1.0\" standalone=\"no\"?>\n" );
-        $this->xml .= sprintf( "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n" ); 
-        $this->xml .= sprintf( "   \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n\n" );
+        $this->xml .= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+        $this->xml .= "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"\n";
+        $this->xml .= "   \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n\n";
 
         $this->xml .= sprintf( "<svg width=\"%d\" height=\"%d\" ", $this->width, $this->height );
         $this->xml .= "version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n";
@@ -370,4 +369,3 @@ class CSVGGraph
     }
 };
 
-?>

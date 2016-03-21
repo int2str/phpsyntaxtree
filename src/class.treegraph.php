@@ -42,7 +42,7 @@ class CTreeGraph
     function CTreeGraph( 
          &$e_list_ref
         , $color=TRUE, $antialias=TRUE, $triangles=TRUE
-        , $font="Vera.ttf", $fontsize=8 )
+        , $font="FreeSerif.ttf", $fontsize=8 )
     {
         // Store parameters
         
@@ -127,7 +127,7 @@ class CTreeGraph
     var $e_list;
 
     // Font settings
-    var $font       = "Vera.ttf";
+    var $font       = "FreeSerif.ttf";
     var $font_size  = 8;
     
     // Options

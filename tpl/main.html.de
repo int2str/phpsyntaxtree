@@ -36,6 +36,8 @@
             <select name="font">
                 <option value="vera_sans" {SELECT_vera_sans}>Bitstream Vera Sans</option>
                 <option value="vera_serif" {SELECT_vera_serif}>Bitstream Vera Serif</option>
+                <option value="free_sans" {SELECT_free_sans}>GNU FreeFont Sans</option>
+                <option value="free_serif" {SELECT_free_serif}>GNU FreeFont Serif</option>
             </select>
             &nbsp;
             <select name="fontsize">
