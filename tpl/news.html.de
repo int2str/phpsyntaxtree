@@ -1,5 +1,11 @@
 <h2>Aktuelles</h2>
 
+<h3>2015-02-06 - Jetzt auch mit Umlauten</h3>
+<p>
+    Nach langer Zeit wure phpSyntaxTree jetzt auf UTF-8 umgestellt.
+    Das heisst jetzt gibts endlich auch B&auml;ume mit Umlauten usw.!
+</p>
+
 <h3>2006-08-02 - phpSyntaxTree ist umgezogen</h3>
 <p>
     Das phpSyntaxTree Projekt ist zu Google Code umgezogen.

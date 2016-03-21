@@ -25,22 +25,6 @@
 require_once( "src/class.elementlist.php" );
 require_once( "src/class.element.php" );
 
-function escape_high_ascii( $s )
-{
-    $html = '';
-
-    for( $i = 0; $i < strlen( $s ); ++$i )
-    {
-        $c = $s[$i];
-        if ( ord( $c ) < 127 )
-            $html .= $c;
-        else
-            $html .= sprintf( '&#%d;', ord( $c ) );
-    }
-
-    return $html;
-}
-
 class CStringParser
 {
     // ----------------------------------------------------------------------
@@ -57,8 +41,6 @@ class CStringParser
         $s = str_replace( "  ", " ", $s );
         $s = str_replace( "] [", "][", $s );
         $s = str_replace( " [", "[", $s );
-
-        $s = escape_high_ascii( $s );
 
         // Store it for later...
         
