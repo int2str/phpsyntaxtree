@@ -39,7 +39,7 @@ class CSVGGraph
     // ----------------------------------------------------------------------
     
     // Constructor
-    function CSVGGraph( 
+    function __construct(
          &$e_list_ref
         , $color=TRUE, $antialias=TRUE, $triangles=TRUE
         , $font="Vera.ttf", $fontsize=10 )

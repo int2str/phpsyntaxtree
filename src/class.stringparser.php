@@ -31,7 +31,7 @@ class CStringParser
     // PUBLIC FUNCTIONS
     // ----------------------------------------------------------------------
 
-    function CStringParser( $s )
+    function __construct( $s )
     {
         // Clean up the data a little to make processing easier
         
