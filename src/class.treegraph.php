@@ -39,7 +39,7 @@ class CTreeGraph
     // ----------------------------------------------------------------------
     
     // Constructor
-    function CTreeGraph( 
+    function __construct(
          &$e_list_ref
         , $color=TRUE, $antialias=TRUE, $triangles=TRUE
         , $font="FreeSerif.ttf", $fontsize=8 )

@@ -51,7 +51,7 @@ class CElement
     var $indent     = 0;
 
     // Constructor
-    function CElement( $id = 0, $parent = 0, $content = NULL, $level = 0, $type = ETYPE_LEAF )
+    function __construct( $id = 0, $parent = 0, $content = NULL, $level = 0, $type = ETYPE_LEAF )
     {
         $this->id       = $id;
         $this->parent   = $parent;
